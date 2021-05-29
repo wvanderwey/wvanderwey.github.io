@@ -3,21 +3,23 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 		</head>
 		<body>
 
-            {% include navigation.html %}
+                {% include navigation.html %}
 
 			<div class="container">
 			
     			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="https://github.com/wvanderwey">github.com/wvanderwey</a></li>
-				</ul>
-			</footer>
+
+                {% if page.url != "/" %}
+                {% include footer.html %} 
+                {% endif %}
+
 		</body>
 	</html>
