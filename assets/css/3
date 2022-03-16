@@ -73,6 +73,8 @@ body {
     display: none;
 }
 
+.navigation.responsive {
+}
 
 /* responsiveness */
 @media screen and (max-width: 600px) {
@@ -112,7 +114,6 @@ body {
 .container, footer {
     margin: auto;
     width: 70%;
-    max-width: 900px;
 }
 
 h1 {
@@ -205,10 +206,6 @@ p {
 
 .post-lists a {
     font-size: 1.5em;
-}
-
-.post-lists li {
-    padding: 1em;
 }
 
 /* make mobile content will width*/

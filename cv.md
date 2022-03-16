@@ -1,7 +1,9 @@
 ---
 layout: default
-name: CV
+name: Contact 
 ---
-# My CV
+# Contact 
 
-I need to upload this still...
+Email: willvanderwey [at] gmail [dot] com
+Github: github.com/wvanderwey
+

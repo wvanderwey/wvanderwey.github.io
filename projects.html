@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+---
+<h1> Latest Projects </h1>
+<div class="content">
+<ul class="post-lists">
+    <h2>Machine Learning</h2>
+    {% for post in site.categories.Machine_Learning%}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }} &nbsp</a></h3>
+        </li>
+    {% endfor %}
+    <h2>Personal</h2>
+    {% for post in site.categories.Personal %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }} &nbsp</a></h3>
+        </li>
+    {% endfor %}
+</ul>
+
+</div>

@@ -2,10 +2,15 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
+            <!-- favicon -->
+            <link rel="shortcut icon" type="image/jpg" href="/assets/images/favicon.ico">
+			<!-- links to fonts -->
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+            <!-- helps chrome dev emulator -->
+            <meta name="viewport" content="width=device-width">
 		</head>
 		<body>
 
@@ -20,6 +25,18 @@
                 {% if page.url != "/" %}
                 {% include footer.html %} 
                 {% endif %}
+
+        <script>
+            function toggleNav() {
+                var el = document.getElementById("navbar");
+                if (el.className === "navigation") {
+                    el.className += " responsive";
+                }
+                else {
+                    el.className = "navigation";
+                }
+            }
+        </script>
 
 		</body>
 	</html>

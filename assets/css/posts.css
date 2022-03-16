@@ -1,0 +1,41 @@
+img {
+    padding: 2em 0;
+    width: 80%;
+    max-width: 600px; 
+    margin: 0 auto;
+    height: auto;
+    display: block;
+}
+
+.double_plot img {
+    padding: 0;
+    width: 100%;
+}
+
+.double_plot {
+    padding: 2em 0;
+    display: flex;
+}
+
+.plot {
+    flex: 50%;
+    padding: 5px;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 800px) {
+    .double_plot {
+        padding: 2em 0;
+        display: block;
+    }
+    .plot{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.quad_plot {
+    width: 100%;
+    max-width: none;
+}

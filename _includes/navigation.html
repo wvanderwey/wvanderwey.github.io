@@ -1,11 +1,15 @@
-<nav>
-    <ul>
-        {% for item in site.data.navigation %}
-            <li>
-                <a href="{{ item.link }}" {% if page.url == item.link  %}class="current"{% endif %}>
-                     {{ item.name }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+
+<nav class="navigation" id="navbar">
+    <a href="/" {%if page.url == "/" %}class="current"{% endif %} id="logo">wv<br>dw</a>
+    <div class="nav-right">
+        <a href="/about.html" {%if page.url == "/about.html" %}class="current"{% endif %}>ABOUT</a>
+        <a href="/contact.html" {%if page.url == "/contact.html" %}class="current"{% endif %}>CONTACT</a>
+        <a href="/projects.html" {%if page.url == "/projects.html" %}class="current"{% endif %}>PROJECTS</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </a>
+
 </nav>

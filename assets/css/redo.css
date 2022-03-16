@@ -1,0 +1,88 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+    font-family:'Montserrat', sans-serif;
+}
+nav ul, footer ul {
+    font-family:'Montserrat', sans-serif;
+    padding: 0px;
+    list-style: none;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 10vw;
+    font-size: 1.2em;
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    color: red;
+}
+h1 {
+    font-size: 6em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Roboto', sans-serif;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 3px solid #555;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.current {
+    color: red;
+}
+.current:hover {
+    color: red;    
+}
+
+.post_excerpt {
+    font-size: 0.9em;
+    margin-bottom: 3.0em;
+}
+.blurb {
+    line-height: 100vh;
+}
+
+.blurb .wvdw {
+    height: 80vh;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 8vh;
+    letter-spacing: 0.3em;
+}
+
+.blurb .will {
+    color: #ff5264;
+}
+
+.blurb .van {
+    color: #ff6464;
+}
+
+.blurb .der {
+    color: #ff8264;
+}
+
+.blurb .wey {
+    color: #ffaa64;
+}
+
