@@ -189,6 +189,13 @@ h2 {
     font-size: 2.2em;
 }
 
+/* adjust size relative to h1 */
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
 h3 {
     margin-bottom: 0;
     font-size: 1.2em;
@@ -212,6 +219,13 @@ p {
     font-size: 1.5em;
 }
 
+/* adjust font-size relative to h1 */
+@media screen and (max-width: 600px) {
+    .post-lists a {
+        font-size: 1.2em;
+    }
+}
+
 .post-lists li {
     padding: 1em;
 }
@@ -227,4 +241,11 @@ p {
 /* auto hyphenate long words */
 .hyphenate {
     word-wrap: break-word;
+}
+
+/* push content down a little on mobile */
+@media screen and (max-width: 600px) {
+    .container {
+        padding-top: 1em;
+    }
 }
