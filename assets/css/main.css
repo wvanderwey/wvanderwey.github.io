@@ -73,7 +73,6 @@ body {
     display: none;
 }
 
-
 /* responsiveness */
 @media screen and (max-width: 600px) {
     .navigation .nav-right a { display: none; } 
@@ -117,8 +116,14 @@ body {
 
 h1 {
     padding-bottom: 0.3em;
-    font-size:4em;
+    font-size: 4em;
     font-family: 'Roboto Mono', monospace;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
 a {
@@ -216,4 +221,10 @@ p {
     .container, footer {
         width: 90%;
     }
+}
+
+
+/* auto hyphenate long words */
+.hyphenate {
+    word-wrap: break-word;
 }
